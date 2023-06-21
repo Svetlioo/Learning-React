@@ -147,3 +147,6 @@ const book = getBook(2);
 const { title, author } = book;
 console.log(title, "\n", author);
 console.log(typeof book);
+fetch("https://jsonplaceholder.typicode.com/todos/1")
+  .then((response) => response.json())
+  .then((json) => console.log(json));
